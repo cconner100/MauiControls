@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:zt="clr-namespace:ClientApp.UserControls"
+             x:Class="ClientApp.MainPage"
+             Appearing="ContentPage_Appearing"
+             Loaded="ContentPage_Loaded"
+             Title="MainPage">
+    <Grid>
+        <zt:ZtNavigationView x:Name="NavView" 
+                             Grid.Column="0"
+                             Grid.Row="0"
+                             IsBackButtonEnabled="True" 
+                             IsBackButtonVisable="Auto" 
+                             IsSettingsVisible="True"
+                             PaneDisplayMode="LeftCompact">
+
+            <zt:ZtWebTabView x:Name="NavTabView" Loaded="NavTabView_Loaded">
+
+            </zt:ZtWebTabView>
+            
+        </zt:ZtNavigationView>
+    </Grid>
+</ContentPage>
