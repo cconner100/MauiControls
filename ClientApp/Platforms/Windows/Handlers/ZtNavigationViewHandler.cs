@@ -211,7 +211,10 @@
         //}
         public static void MapMenuItems(IZtNavigationViewHandler viewHandler, IZtNavigationView virtualView)
         {
-            virtualView.MenuItems = ((NavigationView)(viewHandler?.PlatformView)).MenuItems;
+            var x = ((NavigationView)(viewHandler?.PlatformView)).MenuItems;
+
+            virtualView.MenuItems = (IList<object>)((NavigationView)(viewHandler?.PlatformView)).MenuItems;
+
         }
         public static void MapMenuItemsSource(IZtNavigationViewHandler viewHandler, IZtNavigationView virtualView)
         {

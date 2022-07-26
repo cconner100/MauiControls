@@ -290,7 +290,7 @@ namespace ClientApp.UserControls
             }
         }
 
-        public static readonly BindableProperty MenuItemsProperty = BindableProperty.Create("MenuItems", typeof(List<object>), typeof(ZtNavigationView));
+        public static readonly BindableProperty MenuItemsProperty = BindableProperty.Create("MenuItems", typeof(IList<object>), typeof(ZtNavigationView),null,BindingMode.TwoWay);
         public IList<object> MenuItems
         {
             get
