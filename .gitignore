@@ -9,3 +9,6 @@
 /.vs/MauiControls/v17
 /ClientApp/bin/Debug
 /ClientApp/obj
+ClientApp/Platforms/MacCatalyst/.DS_Store
+ClientApp/Platforms/.DS_Store
+.DS_Store
